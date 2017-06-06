@@ -1,0 +1,88 @@
+<div class="navbar-wagon">
+  <!-- Logo -->
+  <a href="/" class="navbar-wagon-brand">
+    <%= image_tag("http://res.cloudinary.com/dkvqyjtzb/image/upload/v1496127523/logo_resized_puzvyf.jpg") %>
+  </a>
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+    <!-- LOGIN -->
+    <div>
+      <%= link_to "Login", user_session_path, class: "navbar-wagon-item" %>
+    </div>
+    <!-- EDIT USER -->
+    <div>
+      <%= link_to "Edit", edit_user_registration_path, class: "navbar-wagon-item" %>
+    </div>
+    <!-- ADMIN -->
+    <div>
+      <%= link_to "Admin", rails_admin_path, class: "navbar-wagon-item" %>
+    </div>
+    <!-- LOG OUT -->
+    <div>
+      <%= link_to "Log-out", destroy_user_session_path,
+      method: :delete,
+      data: { confirm: "Are you sure?" }, class: "navbar-wagon-item"%>
+    </div>
+
+    <!-- ABOUT US -->
+    <%= link_to "About us", '#about-us', class: "navbar-wagon-item" %>
+
+    <!-- TRAINING -->
+    <%= link_to "Training", '#training', class: "navbar-wagon-item" %>
+
+    <!-- SCHOOL -->
+    <%= link_to "School", '#school', class: "navbar-wagon-item" %>
+
+    <!-- EVENTS -->
+    <%= link_to "Events", '#events', class: "navbar-wagon-item" %>
+
+    <!-- Notification link-->
+    <!-- <a href="" class="navbar-wagon-item navbar-wagon-link">
+      <div class="badge-container">
+        <i class="fa fa-envelope-o"></i>
+        <div class="badge badge-blue">3</div>
+      </div>
+    </a> -->
+
+    <!-- Profile picture and dropdown -->
+  <!--   <div class="navbar-wagon-item">
+      <div class="dropdown">
+        <img src="http://placehold.it/50x50" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Log Out</a></li>
+        </ul>
+      </div>
+    </div> -->
+
+    <!-- Button (call-to-action) -->
+    <a href="" class="navbar-wagon-item navbar-wagon-button btn">Contact us</a>
+
+    <!-- Search form -->
+    <!-- <form action="" class="navbar-wagon-search">
+      <input type="text" class="navbar-wagon-search-input" placeholder="Search something">
+      <button type="submit" class="navbar-wagon-search-btn">
+        <i class="fa fa-search"></i>
+      </button>
+    </form> -->
+
+  </div>
+
+
+
+  <!-- Dropdown appearing on mobile only -->
+  <div class="navbar-wagon-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+        <li><%= link_to "About us", '#about-us' %></li>
+        <li><%= link_to "Training", '#training' %></li>
+        <li><%= link_to "School", '#school' %></li>
+        <li><%= link_to "Contact us", '#' %></li>
+        <li><%= link_to "Events", '#events' %></li>
+        <li><%= link_to "Clients", '#clients' %></li>
+      </ul>
+    </div>
+  </div>
+</div>
