@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Use this setup block to configure all options available in SimpleForm.
 SimpleForm.setup do |config|
   config.error_notification_class = 'alert alert-danger'
@@ -95,11 +97,13 @@ SimpleForm.setup do |config|
       end
 
       wr.use :error, wrap_with: { tag: 'span', class: 'help-block' }
-      wr.use :hint,  wrap_with: { tag: 'p', class: 'help-block' }
+      wr.use :hint, wrap_with: { tag: 'p', class: 'help-block' }
     end
   end
 
-  config.wrappers :horizontal_radio_and_checkboxes, tag: 'div', class: 'form-group', error_class: 'has-error' do |b|
+  config.wrappers :horizontal_radio_and_checkboxes,
+                  tag: 'div', class: 'form-group',
+                  error_class: 'has-error' do |b|
     b.use :html5
     b.optional :readonly
 
@@ -112,7 +116,9 @@ SimpleForm.setup do |config|
     end
   end
 
-  config.wrappers :inline_form, tag: 'div', class: 'form-group', error_class: 'has-error' do |b|
+  config.wrappers :inline_form,
+                  tag: 'div', class: 'form-group',
+                  error_class: 'has-error' do |b|
     b.use :html5
     b.use :placeholder
     b.optional :maxlength
@@ -127,7 +133,9 @@ SimpleForm.setup do |config|
     b.use :hint,  wrap_with: { tag: 'p', class: 'help-block' }
   end
 
-  config.wrappers :multi_select, tag: 'div', class: 'form-group', error_class: 'has-error' do |b|
+  config.wrappers :multi_select,
+                  tag: 'div', class: 'form-group',
+                  error_class: 'has-error' do |b|
     b.use :html5
     b.optional :readonly
     b.use :label, class: 'control-label'

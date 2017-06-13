@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Missing top-level class documentation comment
 class CreateEvents < ActiveRecord::Migration[5.1]
   def change
     create_table :events do |t|
