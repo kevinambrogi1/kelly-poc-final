@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
-ruby '2.3.3'
+ruby '2.3.4'
 
 gem 'pg'
 gem 'puma'
@@ -25,7 +25,7 @@ gem 'simple_form'
 gem 'stackprof'     # For Ruby MRI 2.1+
 gem 'uglifier'
 
-gem 'bundler', '1.13.7'
+gem 'bundler', '~>1.15.3'
 gem 'cloudinary'
 gem 'erubi', '~> 1.6'
 gem 'erubis', '~> 2.7'

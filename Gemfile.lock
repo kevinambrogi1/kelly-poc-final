@@ -246,7 +246,7 @@ DEPENDENCIES
   better_errors
   binding_of_caller
   bootstrap-sass
-  bundler (= 1.13.7)
+  bundler (~> 1.15.3)
   cloudinary
   devise
   erubi (~> 1.6)
@@ -275,7 +275,7 @@ DEPENDENCIES
   uglifier
 
 RUBY VERSION
-   ruby 2.3.3p222
+   ruby 2.3.4p301
 
 BUNDLED WITH
-   1.13.7
+   1.15.3
