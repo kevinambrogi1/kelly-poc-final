@@ -5,9 +5,9 @@
       <i class="fa fa-facebook"></i>
     </a>
 
-    <!-- <a href="#" class="share-link bg-twitter"> -->
-    <!-- <i class="fa fa-twitter"></i> -->
-    <!-- </a> -->
+    <a href="#" class="share-link bg-twitter">
+    <i class="fa fa-twitter"></i>
+    </a>
     <!-- <a href="#" class="share-link bg-email"> -->
     <!-- <i class="fa fa-envelope-o"></i> -->
     <!-- </a> -->
@@ -15,19 +15,21 @@
     <!-- <i class="fa fa-mobile"></i> -->
     <!-- </a> -->
 
-    <!-- Newsletter fields -->
+    <!-- Display newsletter form group -->
+    <div class="form form-inline">
+      <% if cookies[:saved_subscriber]%>
+      Thanks for signing up!
 
-  </div>
-  <div class="share-links share-link">
-    <% if cookies[:saved_subscriber]%>
-    Thanks for signing up!
+      <% else %>
+      <%= form_for Subscriber.create do |f| %>
+      <div class="form-group">
+      <%= f.email_field :email, placeholder: "Subscribe to our newsletter", size: 30, :class => 'form-control inline' %>
+      </div>
+      <%= f.submit "Submit", :class => 'share-link', :class => 'btn btn-primary inline'%>
 
-    <% else %>
-    <%= form_for Subscriber.create do |f| %>
-    <div> <%= f.email_field :email, placeholder: "Sign up for our newsletter!", size: 25 %>
-    <%= f.submit "Subscribe", :class => 'share-link', :class => 'button' %> </div>
-    <% end %>
-    <% end %>
+      <% end %>
+      <% end %>
+    </div>
   </div>
 </div>
 
