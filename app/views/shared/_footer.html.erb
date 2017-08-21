@@ -24,8 +24,8 @@
 
     <% else %>
     <%= form_for Subscriber.create do |f| %>
-    <%= f.email_field :email, placeholder: "Sign up for our newsletter!", size: 25 %>
-    <%= f.submit "Subscribe", :class => 'share-link', :class => 'button' %>
+    <div> <%= f.email_field :email, placeholder: "Sign up for our newsletter!", size: 25 %>
+    <%= f.submit "Subscribe", :class => 'share-link', :class => 'button' %> </div>
     <% end %>
     <% end %>
   </div>

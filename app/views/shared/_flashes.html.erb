@@ -1,3 +1,10 @@
+<!-- display success and error flashes -->
+  <div class="newsletter_flash">
+    <% flash.each do |key, value| %>
+    <div class="alert alert-<%= key %>"><%= value %></div>
+    <% end %>
+  </div>
+
 <div class="navbar-wagon">
   <!-- Logo -->
   <a href="/" class="navbar-wagon-brand">
@@ -74,12 +81,7 @@
     </form> -->
   </div>
 
-  <!-- display success and error flashes -->
-  <div>
-    <% flash.each do |key, value| %>
-    <div class="alert alert-<%= key %>"><%= value %></div>
-    <% end %>
-  </div>
+  <!-- #### -->
 
   <!-- Dropdown appearing on mobile only -->
   <div class="navbar-wagon-item hidden-md hidden-lg">
@@ -103,3 +105,5 @@
     </div>
   </div>
 </div>
+
+

@@ -11,7 +11,7 @@ class SubscribersController < ApplicationController
       flash[:success] = "Thank you for subscribing!"
       redirect_to root_path
     else
-      flash[:error] = "Failed to save, please try again later!"
+      flash[:danger] = "Failed to save, please try again later!"
       redirect_to root_path
     end
   end
