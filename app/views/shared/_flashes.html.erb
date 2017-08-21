@@ -7,34 +7,37 @@
   <div class="navbar-wagon-right hidden-xs hidden-sm">
     <!-- LOGIN -->
     <div>
-      <%= link_to "Login", user_session_path, class: "navbar-wagon-item" %>
+      <% link_to "Login", user_session_path, class: "navbar-wagon-item" %>
     </div>
     <!-- EDIT USER -->
     <div>
-      <%= link_to "Edit", edit_user_registration_path, class: "navbar-wagon-item" %>
+      <% link_to "Edit", edit_user_registration_path, class: "navbar-wagon-item" %>
     </div>
     <!-- ADMIN -->
     <div>
-      <%= link_to "Admin", rails_admin_path, class: "navbar-wagon-item" %>
+      <% link_to "Admin", rails_admin_path, class: "navbar-wagon-item" %>
     </div>
     <!-- LOG OUT -->
     <div>
-      <%= link_to "Log-out", destroy_user_session_path,
+      <% link_to "Log-out", destroy_user_session_path,
       method: :delete,
       data: { confirm: "Are you sure?" }, class: "navbar-wagon-item"%>
     </div>
 
-    <!-- ABOUT US -->
-    <%= link_to "About us", '#about-us', class: "navbar-wagon-item" %>
-
-    <!-- TRAINING -->
-    <%= link_to "Training", '#training', class: "navbar-wagon-item" %>
+    <!-- ABOUT -->
+    <%= link_to "About", '#about', class: "navbar-wagon-item" %>
 
     <!-- SCHOOL -->
     <%= link_to "School", '#school', class: "navbar-wagon-item" %>
 
-    <!-- EVENTS -->
-    <%= link_to "Events", '#events', class: "navbar-wagon-item" %>
+    <!-- CORPORATE -->
+    <%= link_to "Corporate", '#corporate', class: "navbar-wagon-item" %>
+
+    <!-- SHOWS -->
+    <%= link_to "Shows", '#events', class: "navbar-wagon-item" %>
+
+    <!-- TESTIMONIALS -->
+    <%= link_to "Testimonials", '#events', class: "navbar-wagon-item" %>
 
     <!-- Notification link-->
     <!-- <a href="" class="navbar-wagon-item navbar-wagon-link">
@@ -57,7 +60,10 @@
     </div> -->
 
     <!-- Button (call-to-action) -->
-    <a href="" class="navbar-wagon-item navbar-wagon-button btn">Contact us</a>
+    <!-- <a href="" class="navbar-wagon-item navbar-wagon-button btn">Contact</a> -->
+
+    <!-- TESTIMONIALS -->
+    <%= link_to "Contact", '#contact', class: "navbar-wagon-item" %>
 
     <!-- Search form -->
     <!-- <form action="" class="navbar-wagon-search">
@@ -66,26 +72,30 @@
         <i class="fa fa-search"></i>
       </button>
     </form> -->
-
   </div>
 
-
+  <!-- display success and error flashes -->
+  <div>
+    <% flash.each do |key, value| %>
+    <div class="alert alert-<%= key %>"><%= value %></div>
+    <% end %>
+  </div>
 
   <!-- Dropdown appearing on mobile only -->
   <div class="navbar-wagon-item hidden-md hidden-lg">
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><%= link_to "About us", '#about-us' %></li>
-        <li><%= link_to "Training", '#training' %></li>
+        <li><%= link_to "About", '#about' %></li>
         <li><%= link_to "School", '#school' %></li>
-        <li><%= link_to "Contact us", '#' %></li>
-        <li><%= link_to "Events", '#events' %></li>
-        <li><%= link_to "Clients", '#clients' %></li>
-        <li><%= link_to "Login", user_session_path, class: "navbar-wagon-item" %></li>
-        <li><%= link_to "Edit", edit_user_registration_path, class: "navbar-wagon-item" %></li>
-        <li><%= link_to "Admin", rails_admin_path, class: "navbar-wagon-item" %></li>
-        <li><%= link_to "Log-out", destroy_user_session_path,
+        <li><%= link_to "Corporate", '#corporate' %></li>
+        <li><%= link_to "Shows", '#shows' %></li>
+        <li><%= link_to "Testimonials", '#' %></li>
+        <li><%= link_to "Contact", '#' %></li>
+        <li><% link_to "Login", user_session_path, class: "navbar-wagon-item" %></li>
+        <li><% link_to "Edit", edit_user_registration_path, class: "navbar-wagon-item" %></li>
+        <li><% link_to "Admin", rails_admin_path, class: "navbar-wagon-item" %></li>
+        <li><% link_to "Log-out", destroy_user_session_path,
           method: :delete,
           data: { confirm: "Are you sure?" }, class: "navbar-wagon-item"%>
         </li>
