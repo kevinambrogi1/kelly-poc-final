@@ -31,6 +31,7 @@ gem 'erubi', '~> 1.6'
 gem 'erubis', '~> 2.7'
 gem 'rails_admin', '>= 1.0.0.rc'
 gem 'remotipart', github: 'mshibuya/remotipart'
+gem 'postmark-rails'
 
 group :development, :test do
   gem 'letter_opener'
