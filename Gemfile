@@ -33,6 +33,7 @@ gem 'rails_admin', '>= 1.0.0.rc'
 gem 'remotipart', github: 'mshibuya/remotipart'
 
 group :development, :test do
+  gem 'letter_opener'
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'listen', '~> 3.0.5'

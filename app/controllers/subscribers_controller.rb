@@ -8,6 +8,7 @@ class SubscribersController < ApplicationController
     @subscriber = Subscriber.new(subscriber_params)
     if @subscriber.save
       cookies[:saved_lead] = true
+      SubscriberMailer.creation_confirmation(@subscriber).deliver_now
       flash[:success] = "Thank you for subscribing!"
       redirect_to root_path
     else
