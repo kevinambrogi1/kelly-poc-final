@@ -7,4 +7,14 @@ Rails.application.routes.draw do
   devise_for :users, skip: [:subscribers]
   root to: 'pages#home'
 
+
+  controller :static_pages do
+    get :about
+    get :school
+    get :corporate
+    get :shows
+    get :testimonials
+    get :contact
+  end
+
 end

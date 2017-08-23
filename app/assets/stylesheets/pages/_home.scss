@@ -231,3 +231,20 @@
 .bg-facebook {
   background: #3b5998;
 }
+
+.static-pages {
+  background: white;                          /* White background */
+  padding: 30px;                              /* Internal space */
+  border-radius: 4px;                         /* Small radius */
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border: 1px solid rgba(0, 0, 0, 0.1);       /* OR subtle border */
+}
+
+.copyright {
+  text-align: center;
+}
+
+.smaller-font{
+  font-size: 14px;
+}
+

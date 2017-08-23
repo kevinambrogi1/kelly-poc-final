@@ -6,7 +6,7 @@
     </a>
 
     <a href="#" class="share-link bg-twitter">
-    <i class="fa fa-twitter"></i>
+      <i class="fa fa-twitter"></i>
     </a>
     <!-- <a href="#" class="share-link bg-email"> -->
     <!-- <i class="fa fa-envelope-o"></i> -->
@@ -23,7 +23,7 @@
       <% else %>
       <%= form_for Subscriber.create do |f| %>
       <div class="form-group">
-      <%= f.email_field :email, placeholder: "Subscribe to our newsletter", size: 30, :class => 'form-control inline' %>
+        <%= f.email_field :email, placeholder: "Subscribe to our newsletter", size: 30, :class => 'form-control inline' %>
       </div>
       <%= f.submit "Submit", :class => 'share-link', :class => 'btn btn-primary inline'%>
 
@@ -31,8 +31,8 @@
       <% end %>
     </div>
   </div>
-</div>
 
+</div>
 
 <% if notice %>
 <%= notice %>

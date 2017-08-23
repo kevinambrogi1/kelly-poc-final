@@ -1,39 +1,59 @@
 <div id="top">
-<!-- ##### About ##### -->
+  <!-- ##### About ##### -->
   <div id= "about top", class="banner" style="background-image: linear-gradient(-225deg, rgba(238,232,200,0.6) 0%, rgba(0,36,61,0.6) 50%), url('http://res.cloudinary.com/dkvqyjtzb/image/upload/v1496077487/17097166_374830502898846_7759038778929024717_o_kiijjl.jpg');">
+    <%= link_to about_path, :action => 'go' do %>
     <div class="banner-content">
       <h1>About</h1>
       <p>A team of fun and passionate improvisers</p>
       <!-- <a class="btn btn-primary btn-lg">Meet the team</a> -->
     </div>
+    <% end %>
   </div>
 
   <!-- ##### School ##### -->
-  <div id= "school", class="banner" style="background-image: linear-gradient(-225deg, rgba(249,205,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('http://res.cloudinary.com/dkvqyjtzb/image/upload/v1496077499/17097315_374830789565484_7044599031594692898_o_n7urtg.jpg');">
+  <div id= "school", class="banner" style="background-image: linear-gradient(-225deg, rgba(249,205,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('http://res.cloudinary.com/dkvqyjtzb/image/upload/v1503510793/school_kelly_tjtowp.jpg');">
+    <%= link_to school_path, :action => 'go' do %>
     <div class="banner-content">
       <h1>School</h1>
       <p>Find yourself and develop your improvisation skills</p>
       <!-- <a class="btn btn-primary btn-lg">Learn now</a> -->
     </div>
+    <% end %>
   </div>
 
   <!-- ##### Corporate ##### -->
   <div id= "corporate", class="banner" style="background-image: linear-gradient(-225deg, rgba(139,165,164,0.6) 0%, rgba(0,36,61,0.6) 50%), url('http://res.cloudinary.com/dkvqyjtzb/image/upload/v1503308545/170208aospecialkellycircle_htqnup.jpg');">
+    <%= link_to corporate_path, :action => 'go' do %>
     <div class="banner-content">
       <h1>Corporate</h1>
       <p>Did you ever consider improvisation?</p>
       <!-- <a class="btn btn-primary btn-lg">Book a session</a> -->
     </div>
+    <% end %>
   </div>
 
-    <!-- ##### Shows ##### -->
+  <!-- ##### Shows ##### -->
   <div id= "shows", class="banner" style="background-image: linear-gradient(-225deg, rgba(139,165,164,0.6) 0%, rgba(0,36,61,0.6) 50%), url('http://res.cloudinary.com/dkvqyjtzb/image/upload/v1503243167/19756646_435723323476230_8655779729754200274_n_rve8zv.jpg');">
+    <%= link_to shows_path, :action => 'go' do %>
     <div class="banner-content">
       <h1>Shows</h1>
       <p>Very cool shows coming up</p>
       <!-- <a class="btn btn-primary btn-lg">Book a session</a> -->
     </div>
+    <% end %>
   </div>
+
+    <!-- ##### testimonials ##### -->
+  <div id= "testimonials", class="banner" style="background-image: linear-gradient(-225deg, rgba(139,165,164,0.6) 0%, rgba(0,36,61,0.6) 50%), url('http://res.cloudinary.com/dkvqyjtzb/image/upload/v1503516414/14524556_10211126994433215_559345380819933392_o_rrur1k.jpg');">
+    <%= link_to testimonials_path, :action => 'go' do %>
+    <div class="banner-content">
+      <h1>Testimonials</h1>
+      <p>What our students and clients say about us</p>
+      <!-- <a class="btn btn-primary btn-lg">Book a session</a> -->
+    </div>
+    <% end %>
+  </div>
+
 </div>
 
 <!-- ##### Shows ##### -->
@@ -105,81 +125,81 @@
     <div class="col-xs-6 col-sm-2">
       <!-- insert <div class="card"> -->
       <!-- <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://res.cloudinary.com/dkvqyjtzb/image/upload/v1496165910/BAYERCS_Logo_Cent_RGB_100917-103x75_lj5gi5.png');"> -->
-        <!-- <div class="card-category">Popular</div> -->
-        <!-- <div class="card-description"> -->
-          <!-- <h2>Bayer</h2> -->
-          <!-- <p>Very cool stuff, useful and smart</p> -->
-        <!-- </div> -->
-        <!-- <img class="card-user avatar" src="user.jpg"> -->
-        <!-- <a class="card-link" href="#" ></a> -->
+      <!-- <div class="card-category">Popular</div> -->
+      <!-- <div class="card-description"> -->
+      <!-- <h2>Bayer</h2> -->
+      <!-- <p>Very cool stuff, useful and smart</p> -->
       <!-- </div> -->
-    <!-- </div> -->
+      <!-- <img class="card-user avatar" src="user.jpg"> -->
+      <!-- <a class="card-link" href="#" ></a> -->
+      <!-- </div> -->
+      <!-- </div> -->
 
-    <!-- <div class="col<!-- -xs-6 col-sm-2"> -->
+      <!-- <div class="col<!-- -xs-6 col-sm-2"> -->
       <!-- insert <div class="card"> -->
       <!-- <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://res.cloudinary.com/dkvqyjtzb/image/upload/v1496165910/tedX_logo_2-150x37_ahr3hw.png');"> -->
-        <!-- <div class="card-category">Popular</div> -->
-        <!-- <div class="card-description"> -->
-          <!-- <h2>TedX</h2> -->
-          <!-- <p>Very cool stuff, useful and smart</p> -->
-        <!-- </div> -->
-        <!-- <img class="card-user avatar" src="user.jpg"> -->
-        <!-- <a class="card-link" href="#" ></a> -->
+      <!-- <div class="card-category">Popular</div> -->
+      <!-- <div class="card-description"> -->
+      <!-- <h2>TedX</h2> -->
+      <!-- <p>Very cool stuff, useful and smart</p> -->
       <!-- </div> -->
-    <!-- </div> -->
+      <!-- <img class="card-user avatar" src="user.jpg"> -->
+      <!-- <a class="card-link" href="#" ></a> -->
+      <!-- </div> -->
+      <!-- </div> -->
 
-    <!-- <div class="col-xs-6 col-sm-2"> -->
+      <!-- <div class="col-xs-6 col-sm-2"> -->
       <!-- insert <div class="card"> -->
       <!-- <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://res.cloudinary.com/dkvqyjtzb/image/upload/v1496165910/European_Commission_logo-108x75_ivgngp.png');"> -->
-        <!-- <div class="card-category">Popular</div> -->
-        <!-- <div class="card-description"> -->
-          <!-- <h2>European Commission</h2> -->
-          <!-- <p>Very cool stuff, useful and smart</p> -->
-        <!-- </div> -->
-        <!-- <img class="card-user avatar" src="user.jpg"> -->
-        <!-- <a class="card-link" href="#" ></a> -->
+      <!-- <div class="card-category">Popular</div> -->
+      <!-- <div class="card-description"> -->
+      <!-- <h2>European Commission</h2> -->
+      <!-- <p>Very cool stuff, useful and smart</p> -->
       <!-- </div> -->
-    <!-- </div> -->
+      <!-- <img class="card-user avatar" src="user.jpg"> -->
+      <!-- <a class="card-link" href="#" ></a> -->
+      <!-- </div> -->
+      <!-- </div> -->
 
-    <!-- <div class="col-xs-6 col-sm-2"> -->
+      <!-- <div class="col-xs-6 col-sm-2"> -->
       <!-- insert <div class="card"> -->
       <!-- <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://res.cloudinary.com/dkvqyjtzb/image/upload/v1496165910/640px-EFSA_logo-150x71_vgqwbv.png');"> -->
-        <!-- <div class="card-category">Popular</div> -->
-        <!-- <div class="card-description"> -->
-          <!-- <h2>EFSA</h2> -->
-          <!-- <p>Very cool stuff, useful and smart</p> -->
-        <!-- </div> -->
-        <!-- <img class="card-user avatar" src="user.jpg"> -->
-        <!-- <a class="card-link" href="#" ></a> -->
+      <!-- <div class="card-category">Popular</div> -->
+      <!-- <div class="card-description"> -->
+      <!-- <h2>EFSA</h2> -->
+      <!-- <p>Very cool stuff, useful and smart</p> -->
       <!-- </div> -->
-    <!-- </div> -->
+      <!-- <img class="card-user avatar" src="user.jpg"> -->
+      <!-- <a class="card-link" href="#" ></a> -->
+      <!-- </div> -->
+      <!-- </div> -->
 
-    <!-- <div class="col-xs-6 col-sm-2"> -->
+      <!-- <div class="col-xs-6 col-sm-2"> -->
       <!-- insert <div class="card"> -->
       <!-- <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://res.cloudinary.com/dkvqyjtzb/image/upload/v1496165910/CEDEFOP_logo_en-150x50_n6euk7.png');"> -->
-        <!-- <div class="card-category">Popular</div> -->
-        <!-- <div class="card-description"> -->
-          <!-- <h2>CEDEFOP</h2> -->
-          <!-- <p>Very cool stuff, useful and smart</p> -->
-        <!-- </div> -->
-        <!-- <img class="card-user avatar" src="user.jpg"> -->
-        <!-- <a class="card-link" href="#" ></a> -->
+      <!-- <div class="card-category">Popular</div> -->
+      <!-- <div class="card-description"> -->
+      <!-- <h2>CEDEFOP</h2> -->
+      <!-- <p>Very cool stuff, useful and smart</p> -->
       <!-- </div> -->
-    <!-- </div> -->
+      <!-- <img class="card-user avatar" src="user.jpg"> -->
+      <!-- <a class="card-link" href="#" ></a> -->
+      <!-- </div> -->
+      <!-- </div> -->
 
-    <!-- <div class="col-xs-6 col-sm-2"> -->
+      <!-- <div class="col-xs-6 col-sm-2"> -->
       <!-- insert <div class="card"> -->
       <!-- <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://res.cloudinary.com/dkvqyjtzb/image/upload/v1496165912/amcham_rclnwi.png');">
-        <!-- <div class="card-category">Popular</div> -->
-        <!-- <div class="card-description"> -->
-          <!-- <h2>AmCham Brussels</h2> -->
-          <!-- <p>Very cool stuff, useful and smart</p> -->
-        <!-- </div> -->
-        <!-- <img class="card-user avatar" src="user.jpg"> -->
-        <!-- <a class="card-link" href="#" ></a> -->
+      <!-- <div class="card-category">Popular</div> -->
+      <!-- <div class="card-description"> -->
+      <!-- <h2>AmCham Brussels</h2> -->
+      <!-- <p>Very cool stuff, useful and smart</p> -->
       <!-- </div> -->
-    <!-- </div> -->
+      <!-- <img class="card-user avatar" src="user.jpg"> -->
+      <!-- <a class="card-link" href="#" ></a> -->
+      <!-- </div> -->
+      <!-- </div> -->
 
-  <!-- </div> -->
-  <!-- <a class="btn btn-primary btn-lg">Full clients list</a> -->
-<!-- </div> -->
+      <!-- </div> -->
+      <!-- <a class="btn btn-primary btn-lg">Full clients list</a> -->
+      <!-- </div> -->
