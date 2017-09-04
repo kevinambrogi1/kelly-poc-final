@@ -19,7 +19,40 @@
   justify-content: center;
 }
 
- .banner-testimonials {
+.event-banner {
+  color: white;
+  text-align: center;
+  height: 18vw;
+  // height: 100vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  //* not working background pic auto center
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  // background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+}
+
+.school-banner {
+  color: white;
+  text-align: center;
+  height: 18vw;
+  // height: 100vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  //* not working background pic auto center
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  // display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+}
+.banner-testimonials {
   color: white;
   text-align: center;
   height: 55vw;
@@ -150,6 +183,15 @@
   width: 145px;
 }
 
+/* School image */
+.school-image {
+  height: 393px;
+  // margin-right: 10px;
+  // max-width: 25%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 /* Upvote design */
 .product-upvote {
   padding-right: 20px;
@@ -264,4 +306,3 @@
 .smaller-font{
   font-size: 14px;
 }
-
