@@ -19,6 +19,23 @@
   justify-content: center;
 }
 
+ .banner-testimonials {
+  color: white;
+  text-align: center;
+  height: 55vw;
+  // height: 100vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  //* not working background pic auto center
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: 0% 12%;
+}
+
 #top{
   padding-top: 50px;
 }
