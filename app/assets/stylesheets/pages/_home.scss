@@ -190,6 +190,7 @@
   // max-width: 25%;
   background-repeat: no-repeat;
   background-size: contain;
+  padding-left: 0px;
 }
 
 /* Upvote design */
@@ -306,3 +307,9 @@
 .smaller-font{
   font-size: 14px;
 }
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
